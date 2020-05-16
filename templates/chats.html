@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+{% block head %}
+	<script src="{{ url_for('static', filename='chats.js') }}"></script>
+	<script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+	
+
+{% endblock %}
+
+
+{% block title %}
+chats
+{% endblock %}
+
+{% block body %}
+
+	<div class='chats'>
+		<div class='row'>
+			<!-- CHANNEL PANEL -->
+			<div class='col-3' id='channel-panel'>
+				<div class='flack-head'>
+					<h1>Flack</h1>
+				</div>
+
+				<!-- USERNAME AND IMG -->
+				<div class='row' id="Name-and-img">
+					<div class='col-2' id='user-img'>
+						<img src="static/images/user.png" height="30px">
+					</div>
+					<div class='col-9' >
+						<h4 id='username'>{{ user }}</h4>
+					</div>
+				</div>
+
+				<!-- CHANNEL LIST HEADING -->
+
+				<div class='row'  id='channel-header'>
+					<div class='col-8' id='channel-header-title'>
+						<h5>Channels</h5>
+					</div>
+					<div class='col-4'>
+						<button class='btn btn-sm btn-success' id='add'>Add</button>
+					</div>
+				</div>
+
+
+				<!-- ADD CHANNEL FORM -->
+
+				<div class='row' id='addNewChannel'>
+					<div class='row'>
+						<div class="col-8">
+							<label for="channel-name">Name of Channel</label>
+						</div>
+						<div class="col-4">
+							<img src="static/images/uparrow.png" id="upArrow" height='18px'>
+						</div>
+					</div>
+					
+					<div class='row' id='channelError'>This channel name already exists</div>
+					<input type="text" id='channel-name'>
+					<button class= 'btn btn-sm btn-success' id='add_channel'>Add Channel</button>
+				</div>
+
+				<!-- LIST OF CHANNELS -->
+
+				<div class='row' id='channels'>
+					<div class='col-12'>
+						<ul id='channel_list'></ul>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<!-- RIGHT SIDE OF SCREEN -->
+			
+			<div class="col-9">
+
+				<!-- NAV BAR -->
+
+				<div class='row' id='banner'>
+					<nav class="navbar navbar-dark bg-dark">
+						<div class='col-9'></div>
+						<div class="col-3">	
+							<a href="{{ url_for('logout') }}">Logout</a>
+						</div>
+  					</nav>
+				</div>
+
+				<!-- MESSAGE SCREEN -->
+
+				<div class='row'>
+
+					<!-- EACH CHAT -->
+					<div class='col-9' id='message-screen'>
+					</div>
+
+					<!-- ACTIVE USER LIST -->
+
+					<div class='col-3' id="active-users">
+						<div class='row' id="userListHeading">
+							<h4>Active Users</h4>
+						</div>
+						<div class='row'>
+							<ul id='activeUsers'>
+								
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- INPUT SECTION FOR MESSAGES -->
+
+				<div class='row'>
+					<div class='col-9 msgPanel' id="inputPanel">
+						<div class='row'>
+							<div class='col-10'id='message-bar'>
+								<div class='container'>
+									<input type="text" id="message-input" placeholder="Type your message...">
+								</div>
+							</div>
+							<div class='col-2' id='send-btn'>
+								<button class='btn btn-success' id='send'>Send</button>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+
+	
+{% endblock %}

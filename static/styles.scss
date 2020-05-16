@@ -1,0 +1,209 @@
+body{
+	margin:0;
+	padding:0;
+
+}
+
+$shade: #D2DCD2;
+
+#index{
+
+		#imgBlock{
+
+		padding-top: 30%;
+		padding-bottom: 40%;
+		background: orange;
+	}
+	
+	#text-block{
+		width: 60%;
+		margin-top: 30%;
+		margin-bottom: auto;
+
+		.welcome-block{
+			width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			h1{
+				padding-bottom: 20px;
+			}
+			.indexForm{
+				#JoinBtn{
+					margin-top: 20px;
+				}
+			}
+		}
+
+	}
+	
+}
+
+.chats{
+
+	// CHAT PANEL
+	.flack-head{
+		padding-left: 10px;
+	}
+	.Name-and-img{
+		background: blue;
+		#user-img{
+			padding-top: 5px;
+			padding-left: 15px;
+			padding-right: 0;
+
+		}
+
+		#username{
+			padding-left: 0;
+			margin-top: 5px;
+		}
+	}
+
+	#channel-header{
+		background: $shade;
+		height: 40px;
+		margin-right: 5px;
+		button{
+			margin-top: 5px;
+		}
+
+
+	}
+	#channel-header-title{
+		padding-top: 10px;
+		padding-left: 30px;
+
+
+	}
+	#addNewChannel{
+		display: none;
+		padding-left: 25px;
+		button{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		input{
+			width: 90%;
+		}
+		#channelError{
+			color: red;
+			font-size: 14px;
+			padding-left: 15px;
+			display: none;
+		}
+	}
+
+	#channels{
+		background: #D2DCD2;
+		padding-left: 20px;
+		margin-right: 5px;
+		ul{
+			padding-left: 10px;
+			list-style: none;
+			li{
+				padding-left: 15px;
+				margin-left: 0;
+			}
+
+		}
+
+	}
+
+
+	//MESSAGES PANEL
+
+	nav{
+		width: 100%;
+		height: 50px;
+		color: white;
+		// text-align: right;
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		a:hover{
+			color: grey;
+		}
+	}
+
+	#message-screen{
+		padding: 0;
+	}
+
+	.msgBox{
+		height: 600px;
+		overflow: auto;
+		background: $shade;
+		margin-top: 10px;
+	}
+
+	.msgPanel{
+		border: solid gray 1px;
+		padding-bottom: 10px;
+		padding-left: 0;
+		padding-right: 0;
+		// width: 60%;
+		
+		// margin-right: 30px;
+	}
+
+	#message-bar{
+		margin-top: 20px;
+		
+	}
+	#message-input{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	#send-btn{
+		margin-top: 15px;
+		text-align: right;
+		padding-right: 30px;
+	}
+
+
+
+	// MESSAGES
+	%message{
+		padding: 10px;
+		border-radius: 8px;
+		margin-top: 5px;
+		margin-bottom: 5px; 
+	}
+
+	.yourMessage{
+		@extend %message;
+		align-items: left;
+		background: #1B74BE;
+		margin-left: 0;
+	}
+
+	.myMessage{
+		@extend %message;
+		align-items: right;
+		background: #29B03D;
+		margin-right: 0;
+		margin-left: 35%;
+	}
+
+	.username{
+		font-weight: bold;
+	}
+
+	.timestamp{
+		font-style: italic;
+		font-size: 12px;
+	}
+
+
+	// USER LIST
+	#userListHeading{
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+
+}

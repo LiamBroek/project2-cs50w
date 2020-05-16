@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+#index #imgBlock {
+  padding-top: 30%;
+  padding-bottom: 40%;
+  background: orange; }
+#index #text-block {
+  width: 60%;
+  margin-top: 30%;
+  margin-bottom: auto; }
+  #index #text-block .welcome-block {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; }
+    #index #text-block .welcome-block h1 {
+      padding-bottom: 20px; }
+    #index #text-block .welcome-block .indexForm #JoinBtn {
+      margin-top: 20px; }
+
+.chats .flack-head {
+  padding-left: 10px; }
+.chats .Name-and-img {
+  background: blue; }
+  .chats .Name-and-img #user-img {
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 0; }
+  .chats .Name-and-img #username {
+    padding-left: 0;
+    margin-top: 5px; }
+.chats #channel-header {
+  background: #D2DCD2;
+  height: 40px;
+  margin-right: 5px; }
+  .chats #channel-header button {
+    margin-top: 5px; }
+.chats #channel-header-title {
+  padding-top: 10px;
+  padding-left: 30px; }
+.chats #addNewChannel {
+  display: none;
+  padding-left: 25px; }
+  .chats #addNewChannel button {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .chats #addNewChannel input {
+    width: 90%; }
+  .chats #addNewChannel #channelError {
+    color: red;
+    font-size: 14px;
+    padding-left: 15px;
+    display: none; }
+.chats #channels {
+  background: #D2DCD2;
+  padding-left: 20px;
+  margin-right: 5px; }
+  .chats #channels ul {
+    padding-left: 10px;
+    list-style: none; }
+    .chats #channels ul li {
+      padding-left: 15px;
+      margin-left: 0; }
+.chats nav {
+  width: 100%;
+  height: 50px;
+  color: white; }
+  .chats nav a {
+    text-decoration: none;
+    color: white; }
+  .chats nav a:hover {
+    color: grey; }
+.chats #message-screen {
+  padding: 0; }
+.chats .msgBox {
+  height: 600px;
+  overflow: auto;
+  background: #D2DCD2;
+  margin-top: 10px; }
+.chats .msgPanel {
+  border: solid gray 1px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0; }
+.chats #message-bar {
+  margin-top: 20px; }
+.chats #message-input {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+.chats #send-btn {
+  margin-top: 15px;
+  text-align: right;
+  padding-right: 30px; }
+.chats .yourMessage, .chats .myMessage {
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+.chats .yourMessage {
+  align-items: left;
+  background: #1B74BE;
+  margin-left: 0; }
+.chats .myMessage {
+  align-items: right;
+  background: #29B03D;
+  margin-right: 0;
+  margin-left: 35%; }
+.chats .username {
+  font-weight: bold; }
+.chats .timestamp {
+  font-style: italic;
+  font-size: 12px; }
+.chats #userListHeading {
+  padding-top: 20px;
+  padding-left: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

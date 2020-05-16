@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Welcome
+{% endblock %}
+
+{% block body %}
+
+	<div class='row' id="index">
+		<div class='col-6' id='imgBlock'>
+			<img src="static/images/home.png" class="img-fluid" id="indexImg" >
+		</div>
+		<div class='col-6' id="text-block">
+			<div class='welcome-block'>
+				<h1>Welcome to Flack!</h1>
+				<h3>First time? Enter your display name below</h3>
+
+				<form action="{{ url_for('chats') }}"  method="post" class='indexForm'>
+					<div class='form-col'>
+						<div class='form-row'>
+							<div class='col'>
+								<label for="displayName">Display Name:</label>
+								<input type="text" class="form-control" name="displayName">
+							</div>
+						</div>
+						<div class='form-row' id='JoinBtn'>
+							<div class='col'>
+								<button type="submit" name='join' class="btn btn-success">Join Us</button>
+							</div>
+							
+						</div>
+					</div>
+					
+					
+					
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+	
+
+{% endblock %}
